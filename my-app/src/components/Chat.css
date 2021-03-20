@@ -1,0 +1,14 @@
+
+.chat{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(190, 182, 182);
+    box-sizing: border-box;
+
+}
+
+.name__style{
+    flex: 1;
+}
+

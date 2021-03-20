@@ -1,0 +1,34 @@
+
+.tinder__body{
+    display: flex;
+    justify-content: center;
+}
+
+.tinder__image{
+    width: 600px;
+    height: 40vh;
+    
+}
+
+.card{
+    position: relative;
+    width: 400px;
+    height: 70vh;
+    max-width: 70vw;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    border-radius: 15px;
+    
+}
+
+.swipe{
+    position:  absolute
+}
+
+.tinder__name{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    padding: 10px;
+}
