@@ -5,22 +5,34 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import TinderBody from './components/TinderBody';
 import FooterButton from './components/FooterButton';
 import Chats from './components/Chats';
+import Login from './components/Login';
+import PrivateRoute from './components/PrivateRoute';
+
+
 
 function App() {
+  
+
+
+
   return (
     <div className="App">
       <BrowserRouter>
       
+      
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/login'>
+          <Login/>
+        </Route>
+        <PrivateRoute exact path='/'>
         <Header/>
           <TinderBody/>
           <FooterButton/>
-        </Route>
-        <Route exact path='/chat'>
+        </PrivateRoute>
+        <PrivateRoute exact path='/chat'>
         <Header backButton='/'/>
          <Chats/>
-        </Route>
+        </PrivateRoute>
       </Switch>
       </BrowserRouter>
       
